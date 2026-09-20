@@ -106,7 +106,122 @@ body {
     --border-color-dark-inverse: #C1B6AD;
 
     --border: 1px solid #665F55;
-
-    --container-width: 1440px;
 }
 
+body {
+	font-family: 'Inter' , 'san-serif';
+	font-weight: 600;
+	color: var(--color-text-primary);
+	background-color: var(--background-color-page);
+}
+
+.container {
+	width: 100%;
+	max-width: 1360px;
+	height: 60px;
+	margin: 20px auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-menu {
+	width: 1032px;
+	height: 60px;
+}
+.header-menu-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 40px;
+	list-style: none;
+	width: 1032px;
+	height: 60px;
+}
+
+.header-menu-link {
+	font-family: 'Inter' , 'sans-serif';
+	font-weight: 600;
+	font-size: 16px;
+	color: var(--color-text-primary);
+	text-decoration: none;
+}
+
+.header-actions {
+	display: flex;
+	justify-content: space-between;
+	width: 184px;
+	height: 44px;
+}
+
+.header-menu-link-cup {
+	font-family: 'Inter' , 'sans-serif';
+	font-weight: 600;
+	font-size: 16px;
+	text-decoration: none;
+	color: var(--color-text-primary);
+	width: 72px;
+	height: 44px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2px;
+}
+
+.cup-of-coffee {
+	width: 20px;
+	height: 20px;
+}
+
+.theme-toggle {
+	position: relative;
+	width: 88px;
+	height: 44px;
+	padding: 4px;
+	border: 1px solid var(--border-color-primary);
+	border-radius: 100px;
+	background-color: var(--background-color-page);
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.theme-toggle-track {
+	position: absolute;
+	inset: 0;
+}
+
+.theme-toggle-thumb {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: var(--color-dark-text-accent);
+	transition: transform 0.3s ease;
+}
+
+.theme-toggle-icon {
+	position: absolute;
+	z-index: 2;
+	width: 22px;
+	height: 22px;
+	object-fit: contain;
+}
+
+.sun-icon {
+	top: 10px;
+	left: 10px;
+}
+
+.moon-icon {
+	top: 10px;
+	right: 10px;
+
+}
+
+.theme-toggle.active .theme-toggle-thumb {
+	transform: translateX(228px);
+}
