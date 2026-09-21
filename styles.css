@@ -117,10 +117,12 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1360px;
-	height: 60px;
+	max-width: 1440px;
+	height: auto;
 	margin: 20px auto;
 }
+
+/* header*/
 
 .header {
 	display: flex;
@@ -228,15 +230,18 @@ body {
 
 .hero {
 	position: relative;
-	max-width: 1360px;
+	max-width: 1440px;
 	margin: 0 auto;
-	height: 724px;
+	height: 644px;
+	margin-bottom: 100px;
+	overflow: hidden;
 }
 .hero-image {
 	display: block;
-	width: 1360px;
-	height: auto;
+	width: 100%;
+	height: 644px;
 	border-radius: 40px;
+	object-fit: cover;
 }
 
 .hero-content {
@@ -292,6 +297,8 @@ body {
 	margin-top: 50px;
 }
 
+/* section 2 about*/
+
 .about {
 	display: flex;
 	flex-direction: column;
@@ -299,6 +306,7 @@ body {
 	row-gap: 40px;
 	width: 100%;
 	min-height: 1325px;
+	margin-bottom: 100px;
 
 }
 
@@ -346,6 +354,8 @@ body {
     height: 430px;
 }
 
+/* section 2 favorite coffee */
+
 .favorite-coffee {
 	width: 100%;
 	height: 799px;
@@ -354,6 +364,7 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 	row-gap: 40px;
+	margin-bottom: 100px;
 }
 
 .favorite-coffee-tittle {
@@ -433,3 +444,196 @@ body {
 	line-height: 125%;
 }
 
+/*section 4 application*/
+
+.mobile-app {
+	width: 100%;
+	height: 630px;
+	margin-bottom: 100px;
+}
+
+.mobile-app-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mobile-app-content-links{
+	width: 630px;
+	height: 630px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+	justify-content: center;
+}
+.mobile-app-title{
+	color: var(--color-text-primary);
+	font-size: 60px;
+	font-weight: 600px;
+	line-height: 125%;
+}
+
+.mobile-app-title-accent{
+	color: var(--color-text-accent);
+	font-size: 60px;
+	font-weight: 600px;
+	line-height: 125%;
+	font-style: italic
+}
+
+.mobile-app-description{
+	color: var(--color-text-primary);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+}
+.mobile-app-screens {
+	width: 630px;
+	height: 630px;
+}
+
+.mobile-app-links {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.mobile-app-link {
+	box-sizing: border-box;
+	width: 200px;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	row-gap: 8px;
+	padding: 12px 20px;
+	border: 1px solid #665f55;
+	border-radius: 100px;
+	color: #403f3e;
+	text-decoration: none;
+}
+
+.mobile-app-link-icon {
+	flex-shrink: 0;
+	width: 38px;
+	height: 38px;
+	object-fit: contain;
+	margin-right: 10px;
+}
+
+.mobile-app-link-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2px;
+}
+
+.mobile-app-link-description {
+	font-size: 10px;
+	line-height: 140%;
+	font-weight: 600;
+	color: var(--color-text-primary);
+}
+
+.mobile-app-link-name {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+/*footer*/
+
+.contact {
+	padding: 100px 96px;
+	background-color: var(--background-color-container);
+	border-radius: 40px;
+	color: var(--color-text-inverse);
+}
+
+.contact-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.contact-social {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-title {
+	max-width: 550px;
+	margin: 0 0 40px;
+	font-size: 60px;
+	line-height: 125%;
+	font-weight: 600;
+}
+
+.contact-title-accent {
+	display: block;
+	color: var(--color-text-accent);
+	font-style: italic;
+}
+
+.contact-links {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.contact-link {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--border-color-primary);
+	border-radius: 50%;
+	text-decoration: none;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-link-icon {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+}
+
+.contact-information {
+	display: flex;
+	flex-direction: column;
+	min-width: 330px;
+}
+
+.contact-information-title {
+	margin: 0 0 30px;
+	font-size: 24px;
+	line-height: 125%;
+	font-weight: 600;
+}
+
+.contact-information-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.contact-information-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-information-icon {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	object-fit: contain;
+}
+
+.contact-information-description {
+	margin: 0;
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 600;
+}

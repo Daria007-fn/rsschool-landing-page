@@ -53,7 +53,9 @@
         <section class="favorite-coffee container" id="Favorite coffee">
             <h2 class="favorite-coffee-tittle">Choose your <span class="favorite-coffee-tittle-accent">favorite</span> coffee</h2>
             <div class="favorite-coffee-slider">
-                <span class="favorite-coffee-button-left"></span>
+                <span class="favorite-coffee-button-left">
+                    <span class="favorite-coffee-arrow-left"></span>
+                </span>
                 <div class="favorite-coffee-item">
                     <img class="favorite-coffee-slider-1" src="./assets/img/coffee-slider-1.svg">
                     <div class="favorite-coffee-information">
@@ -62,7 +64,9 @@
                     <h3 class="favorite-coffee-price">$5.50</h3>
                      </div>
                 </div>
-                <span class="favorite-coffee-button-right"></span>
+                <span class="favorite-coffee-button-right">
+                    <span class="favorite-coffee-arrow-right"></span>
+                </span>
             </div>
         </section>
         <section class="about container" id="About">
@@ -81,16 +85,20 @@
         <section class="mobile-app container" id="Mobile app">
             <div class="mobile-app-content">
                 <div class="mobile-app-content-links">
-                    <h2 class="mobile-app-tetle"> <span class="mobile-app-accent">Download</span> our app to start ordering</h2>
+                    <h2 class="mobile-app-title"> <span class="mobile-app-title-accent">Download</span> our app to start ordering</h2>
                     <p class="mobile-app-description">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
                     <div class="mobile-app-links">
-                        <a class="mobile-app-link-appstore">
-                        <span class="mobile-app-content-appstore"><img class="mobile-app-appstore-icon" src="./assets/icons/appstore.svg"></span>
-                        Available on the App Store
+                        <a class="mobile-app-link" href="/">
+                            <img class="mobile-app-link-icon" src="./assets/icons/appstore.svg" alt="App Store">
+                            <span class="mobile-app-link-text">
+                                <span class="mobile-app-link-description">Available on the <span class="mobile-app-link-name">App Store</span></span>
+                            </span>
                         </a>
-                        <a class="mobile-app-link-google">
-                        <span class="mobile-app-content-google"> <img src="./assets/icons/google.svg" class="mobile-app-google-icon"></span>
-                        Available on Google Play
+                        <a class="mobile-app-link" href="/">
+                            <img class="mobile-app-link-icon" src="./assets/icons/google.svg" alt="App Store">
+                            <span class="mobile-app-link-text">
+                                <span class="mobile-app-link-description">Available on the <span class="mobile-app-link-name">Google Play</span></span>
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -98,6 +106,40 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="contact container" id="contact">
+            <div class="contact-content">
+                <div class="contact-social">
+                    <h2 class="contact-title">Sip, Savor, Smile.<span class="contact-title-accent">It’s coffee time!</span></h2>
+                    <div class="contact-links">
+                        <a class="contact-link" href="/">
+                            <img src="./assets/icons/twitter.svg" alt="Twitter" class="contact-link-icon">
+                        </a>
+                        <a class="contact-link" href="/">
+                            <img src="./assets/icons/instagram.svg" alt="Instagram" class="contact-link-icon">
+                        </a>
+                        <a class="contact-link" href="/">
+                            <img src="./assets/icons/facebook.svg" alt="Facebook"class="contact-link-icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-information">
+                    <h3 class="contact-information-title"> Contact us </h3>
+                    <div class="contact-information-item">
+                        <img src="./assets/icons/pin-alt.svg" alt="Address" class="contact-information-icon">
+                        <p class="contact-information-description">8558 Green Rd., LA </p>
+                    </div>
+                    <div class="contact-information-item">
+                        <img src="./assets/icons/phone.svg" alt="Number" class="contact-information-icon">
+                        <p class="contact-information-description"> +1 (603) 555-0123 </p>
+                    </div>
+                    <div class="contact-information-item">
+                        <img src="./assets/icons/clock.svg" alt="Working hours" class="contact-information-icon">
+                        <p class="contact-information-description"> Mon–Sat: 9:00–23:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
