@@ -725,8 +725,64 @@ body {
 	height: 150px;
 }
 
+.catalog-button {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	width: auto;
+	height: 48px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 16px;
+	background-color: var(--background-color-page);
+	border: 1px solid var(--border-color-primary);
+	border-radius: 100px;
+	transition: color 0.3s ease
+}
+
+.catalog-button[aria-selected="true"] {
+	border: none;
+	background-color: var(--background-color-container);
+}
+
+.icons {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	background-color: var(--background-color-page);
+}
+.icons-false {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	background-color: var(--border-color-primary);
+}
 .catalog-icon {
+	position: absolute;
 	width: 15px;
 	height: 15px;
-	
+	top: 6px;
+	left: 8px;
+}
+.catalog-navigation-link {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.catalog-button-coffee { 
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 150%;
+	color: var(--color-dark-text-inverse);
+}
+.catalog-button-coffee-false {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 150%;
+	color: var(--color-text-primary);
+	text-align: center;
 }
