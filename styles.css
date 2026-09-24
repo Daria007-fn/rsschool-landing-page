@@ -117,7 +117,7 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1440px;
+	max-width: 1360px;
 	height: auto;
 	margin: 20px auto;
 }
@@ -230,7 +230,7 @@ body {
 
 .hero {
 	position: relative;
-	max-width: 1440px;
+	max-width: 1360px;
 	margin: 0 auto;
 	height: 644px;
 	margin-bottom: 100px;
@@ -242,6 +242,7 @@ body {
 	height: 644px;
 	border-radius: 40px;
 	object-fit: cover;
+
 }
 
 .hero-content {
@@ -636,4 +637,96 @@ body {
 	font-size: 16px;
 	line-height: 150%;
 	font-weight: 600;
+}
+
+.catalog {
+	display: grid;
+	grid-template-columns: repeat(4, 310px);
+	grid-template-rows: repeat(2, 506px);
+	column-gap: 40px;
+	row-gap: 40px;
+	margin-bottom: 100px;
+}
+
+.product {
+	border-radius: 40px;
+	border: 1px solid var(--border-color-dark-primary);
+}
+.product-item-img {
+	width: 340px;
+	height: 340px;
+	top: -15px;
+	left: -15px;
+	object-fit: cover;
+	border-radius: 40px;
+}
+.product-item-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	text-decoration: none;
+}
+.product-item-information{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding-left: 24px;
+	padding-right: 24px;
+
+}
+
+.product-item-title {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 125%;
+	color: var(--color-text-primary);
+}
+.product-item-description {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	color: var(--color-text-primary);
+}
+.product-item-price {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 125%;
+	color: var(--color-text-primary);
+}
+
+.catalog-navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 40px;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.catalog-title {
+	font-size: 60px;
+	font-weight: 600;
+	color: var(--color-text-primary);
+	line-height: 125%;
+	letter-spacing: 0%;
+	text-align: center;
+}
+.catalog-title-accent {
+	font-size: 60px;
+	font-weight: 600;
+	line-height: 125%;
+	color: var(--color-text-accent);
+	font-style: italic;
+}
+.catalog-navigation-title {
+	width: 800px;
+	height: 150px;
+}
+
+.catalog-icon {
+	width: 15px;
+	height: 15px;
+	
 }
